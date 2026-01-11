@@ -10,7 +10,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Blogs", link: "/blogs/" },
-      { text: "Docs", link: "/docs/" },
+      { text: "Docs", link: "https://acceleratez.github.io/docs/" },
       { text: "Projects", link: "/projects/" },
       { text: "About Me", link: "/about-me/" },
     ],
