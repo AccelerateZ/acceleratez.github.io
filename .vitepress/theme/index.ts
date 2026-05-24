@@ -2,6 +2,7 @@
 import { h } from "vue";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
+import PersonalHome from "./PersonalHome.vue";
 import "./style.css";
 import "./vars.css";
 import "./custom-font.css";
@@ -13,5 +14,7 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     });
   },
-  enhanceApp({ app, router, siteData }) {},
+  enhanceApp({ app }) {
+    app.component("personal-home", PersonalHome);
+  },
 } satisfies Theme;

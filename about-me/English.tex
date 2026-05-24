@@ -1,0 +1,176 @@
+\documentclass[10pt]{article}
+
+\usepackage[
+    ignoreheadfoot,
+    top=1.15cm,
+    bottom=0.55cm,
+    left=1.55cm,
+    right=1.55cm,
+    footskip=0.45cm,
+    a4paper
+]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage[
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage{needspace}
+
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}
+    {\needspace{2\baselineskip}\bfseries\large}
+    {}{0pt}{}
+    [\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.09cm}{0.06cm}
+
+\renewcommand\labelitemi{$\circ$}
+\setlist[itemize]{
+    leftmargin=1.7em,
+    topsep=0.035cm,
+    parsep=0.01cm,
+    partopsep=0pt,
+    itemsep=0pt
+}
+\setlist[enumerate]{
+    leftmargin=1.9em,
+    topsep=0.035cm,
+    parsep=0.01cm,
+    partopsep=0pt,
+    itemsep=0.045cm
+}
+
+\newcommand{\entry}[3]{%
+    \textbf{#1} \hfill #2\\
+    #3\par
+}
+
+\begin{document}
+
+\noindent
+\begin{minipage}[c]{0.74\textwidth}
+    \raggedright
+    \textbf{\fontsize{24pt}{24pt}\selectfont Duoxiang Zhao}
+
+    \vspace{0.095cm}
+
+    \small
+    \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.093cm}Anyang, Henan}%
+    \kern 0.25cm%
+    \mbox{\href{mailto:zhaoduoxiang@stu.scu.edu.cn}{{\color{black}\footnotesize\faEnvelope[regular]}\hspace*{0.093cm}zhaoduoxiang@stu.scu.edu.cn}}%
+    \kern 0.25cm%
+    \mbox{\href{tel:+86-17698322117}{{\color{black}\footnotesize\faPhone*}\hspace*{0.093cm}176-9832-2117}}%
+
+    \vspace{0.02cm}
+
+    \mbox{\href{https://github.com/acceleratez}{{\color{black}\footnotesize\faGithub}\hspace*{0.093cm}github.com/acceleratez}}%
+    \kern 0.18cm%
+    \mbox{\href{https://me.acceleratez.fun}{{\color{black}\footnotesize\faGlobe}\hspace*{0.093cm}me.acceleratez.fun}}%
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.20\textwidth}
+    \centering
+    \includegraphics[width=2.35cm,height=3.1cm,keepaspectratio]{img/profile.jpg}
+\end{minipage}
+
+\vspace{0.02cm}
+
+\section{Political Status}
+Probationary Member of the CPC.
+
+\section{Education}
+\entry{Sichuan University - Pittsburgh Institute (SCUPI)}{Chengdu, China}{\textit{B.S. candidate in Computer Science} \hfill \textit{Sept. 2023 - Present}}
+
+\begin{itemize}
+    \item \textbf{Weighted Average:} 90.62, \textbf{GPA:} 3.85/4.0, \textbf{Rank:} 6/88
+    \item \textbf{Relevant Coursework:} Data Structures (98), Operating Systems (98), Formal Methods (98), Data Analysis (96), Convex Optimization (96), Computer Organization and Assembly Language (95), Machine Learning (91), Parallel \& Distributed Systems (90)
+\end{itemize}
+
+\section{Achievements}
+\textbf{Honorable Mention,} The Mathematical Contest in Modeling (MCM). \hfill \textit{2026}
+
+\vspace{0.055cm}
+
+\textbf{The Second Prize Scholarship,} Sichuan University. \hfill \textit{2025}
+
+\vspace{0.055cm}
+
+\textbf{Outstanding Student Leader,} Sichuan University. \hfill \textit{2024, 2025}
+
+\vspace{0.055cm}
+
+\textbf{Provincial Second Prize,} National Undergraduate Mathematical Contest in Modeling. \hfill \textit{2025}
+
+\vspace{0.055cm}
+
+\textbf{The Third Prize Scholarship,} Sichuan University. \hfill \textit{2024}
+
+\section{Skills}
+\textbf{Natural Languages:} English, College English Test Band 6 (Score: 591)
+
+\vspace{0.055cm}
+
+\textbf{Programming Languages:} C++, Java, Python for deep learning, CUDA for parallel programming
+
+\vspace{0.055cm}
+
+\textbf{Advanced Technologies:} Docker, Git, Markdown, Linux, \LaTeX
+
+\section{Publications}
+\begin{enumerate}
+    \item Xing Wei, Yuanhang Wang, \textbf{Duoxiang Zhao}, et al. ``\textit{GPG-HT: Generalized Policy Gradient with History-Aware Decision Transformer for Reliable Routing over Graph Signals},'' under review, 2026.
+
+    Addressed reliable shortest path planning in stochastic networks by proposing a Decision Transformer-GPG framework that models history-aware decision patterns. The method uses long-term dependency information to support reliable routing under uncertainty and stabilize action selection across changing graph states.
+
+    \item \textbf{Duoxiang Zhao} et al. ``\textit{Conceptor-Augmented Regularization for RNN and LSTM Networks},'' in \textit{Proc. 2025 IEEE 2nd International Conference on Deep Learning and Computer Vision (DLCV)}, 2025.
+
+    \href{https://doi.org/10.1109/DLCV65218.2025.11088507}{doi:10.1109/DLCV65218.2025.11088507}.
+
+    Proposed a dynamic Conceptor mechanism integrated into RNN/LSTM hidden states and evaluated its effect as a hidden-state regularizer. The work shows that constraining hidden dynamics improves robustness without changing the recurrent architecture, while remaining lightweight for existing recurrent models.
+\end{enumerate}
+
+\section{Experience in Research}
+\textbf{Research Assistant,} SCUPI CS Laboratory \hfill \textit{May 2025 - Present}
+
+\textit{Advisors: Prof. Guangwu Qian, Prof. Yuqi Ouyang}
+
+\begin{itemize}
+    \item Focus on deep learning applications, feedback networks, and video anomaly detection, with hands-on work on experiment tracking, model iteration, and parallel and distributed systems coursework practice.
+    \item Maintained lab servers and deployment pipelines through daily checks, troubleshooting network failures and exhausted computing resources, investigating suspicious or high-risk software and behavior, and helping draft lab resource usage guidelines.
+\end{itemize}
+
+\vspace{0.055cm}
+
+\textbf{Research Assistant,} Sichuan University - West China Hospital \hfill \textit{Sept. 2024 - Oct. 2024}
+
+\begin{itemize}
+    \item Developed convolutional neural network models for visual classification of pressure ulcer stages, including data preprocessing and evaluation.
+    \item Applied data augmentation and training adjustments to reduce overfitting across CNN models, improving validation stability.
+\end{itemize}
+
+\vspace{0.055cm}
+
+\textbf{Honor Undergraduate Research,} Sichuan University - Pittsburgh Institute \hfill \textit{Apr. 2024 - Apr. 2025}
+
+\begin{itemize}
+    \item Learned the full research workflow, from literature review to experimentation, including reading and summarizing papers, designing experiments, and analyzing results.
+    \item Practiced software tooling for academic research (Git, Docker, Weights \& Biases) and inspected state-of-the-art methods in deep learning and computer vision.
+\end{itemize}
+
+\section{Teaching Experience}
+\textbf{Teaching Assistant} for \textit{Data Analysis (INFSCI 0510)} \hfill \textit{Mar. 2026 - June 2026}
+
+\begin{itemize}
+    \item Supported an introductory machine learning course covering Logistic Regression, SVM, Decision Trees, KNN, Naive Bayes, PCA, K-Means, DBSCAN, GMM, EM, and Ensemble Methods.
+    \item Held lab hours for technical guidance, answered programming questions, and graded assignments and exams.
+\end{itemize}
+
+\end{document}

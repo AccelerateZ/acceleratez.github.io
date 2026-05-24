@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "AccelerateZ's Site",
-  head: [["link", { rel: "icon", href: "/public/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   description: "Personal Homepage built with Vitepress",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -30,8 +30,6 @@ export default defineConfig({
     //   },
     // ],
 
-    socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/acceleratez" }],
   },
 });
